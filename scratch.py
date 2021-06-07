@@ -1,9 +1,12 @@
-x = 10
-i = 0
-z = 12
-while i < x:
-    z *= 2
-    if z > 342900:
-        break
-    print(z, i)
-    i = i + .00000000001
+class Dog:
+	def __init__(self):
+		pass
+	def add_one(self,x):
+		return x + 1
+	
+	def bark(self):
+		print("bark")
+
+d = Dog()
+d.bark()
+print(d.add_one(5))
