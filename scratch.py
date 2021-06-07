@@ -1,14 +1,18 @@
 class Dog:
-	def __init__(self,name):
+	def __init__(self,name, age):
 		self.name = name
-		print(name)
-	def add_one(self,x):
-		return x + 1
-	
-	def bark(self):
-		print("bark")
+		self.age = age
 
-d = Dog("Tim")
-print(d.name)
-d2 = Dog("Bill")
-print(d2.name)
+	def get_name(self, name):
+		return self.name
+	
+	def get_age(self):
+		return self.age
+	
+	def set_age(self, age):
+		self.age = age
+
+d1_age = 23
+d2_name = "Tom"
+d = Dog(d2_name,d1_age)
+print(d.get_age())
